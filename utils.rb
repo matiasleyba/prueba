@@ -1,9 +1,9 @@
 module Utils
   def self.say_hello_to(name,language)
-    if language == "es"
-      puts "hola #{@name}!"
+    unless language == "es"
+      puts "no hablo tu idioma"
     else
-      puts "no entiendo tu idioma"
+      puts "hola #{@name}!"
     end
   end
 end
